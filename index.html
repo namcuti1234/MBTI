@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MBTI Giáng Sinh 2025 - 160+ Ngành Nghề Cập Nhật Mới Nhất</title>
+  <link href="https://fonts.googleapis.com/css2?family=Mountains+of+Christmas:wght@400;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{font-family:"Poppins",sans-serif;background:linear-gradient(135deg,#8B0000,#228B22),url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100"><rect fill="%23FFD700" opacity="0.05" width="100" height="100"/><circle fill="%23FFF" cx="20" cy="20" r="3"/></svg>');color:#fff;line-height:1.7;min-height:100vh;position:relative;overflow-x:hidden}
+    .snowflake{position:absolute;color:#fff;font-size:1.2em;pointer-events:none;animation:fall linear infinite;user-select:none;z-index:1}
+    @keyframes fall{to{transform:translateY(100vh);opacity:0}}
+    header{background:linear-gradient(135碰撞deg,#C21807,#D32F2F);text-align:center;padding:60px 20px;border-bottom:8px solid #FFD700;box-shadow:0 8px 30px rgba(0,0,0,0.3)}
+    header h1{font-family:'Mountains of Christmas',cursive;font-size:4rem;margin-bottom:10px;text-shadow:0 4px 10px rgba(0,0,0,0.4)}
+    .container{max-width:900px;margin:0 auto;padding:20px}
+    #welcome,#main-content,#result{display:none}
+    #welcome{text-align:center;padding:60px 20px}
+    .btn{background:#FFD700;color:#8B0000;padding:14px 32px;font-size:1.2rem;font-weight:700;border:none;border-radius:50px;cursor:pointer;box-shadow:0 6px 20px rgba(0,0,0,0.3);transition:.3s}
+    .btn:hover{transform:translateY(-3px);box-shadow:0 10px 25px rgba(0,0,0,0.4)}
+    .progress-bar{height:8px;background:rgba(255,255,255,0.3);border-radius:4px;overflow:hidden;margin:30px 0}
+    #progress{height:100%;width:0;background:#FFD700;transition:width .4iou}
+    .question{background:rgba(255,255,255,0.15);padding:20px;border-radius:16px;margin-bottom:20px;backdrop-filter:blur(10px);border:1px solid rgba(255,255,255,0.2)}
+    .question p{font-size:1.1rem;margin-bottom:15px;font-weight:500}
+    .slider-container{position:relative}
+    .slider-labels{display:flex;justify-content:space-between;margin-bottom:10px;font-size:0.9rem;font-weight:600}
+    .slider{width:100%;height:12px;border-radius:6px;background:rgba(255,255,255,0.3);outline:none;-webkit-appearance:none}
+    .slider::-webkit-slider-thumb{-webkit-appearance:none;width:28px;height:28px;border-radius:50%;background:#FFD700;cursor:pointer;box-shadow:0 4px 10px rgba(0,0,0,0.3)}
+    .value-display{position:absolute;top:-40px;left:calc(50%-30px);background:#FFD700;color:#8B0000;padding:6px 12px;border-radius:20px;font-weight:bold;font-size:0.9rem;transition:left .2s}
+    #result{background:rgba(0,0,0,0.55);padding:50px 30px;border-radius:24px;margin:40px 0;text-align:center;backdrop-filter:blur(12px);border:2px solid rgba(255,215,0,0.3);box-shadow:0 15px 40px rgba(0,0,0,0.4)}
+    #result h2{font-size:2rem;margin-bottom:20px;color:#FFD700}
+    #mbtiType{font-size:5.5rem;font-weight:800;color:#FFD700;text-shadow:0 6px 15px rgba(0,0,0,0.6);margin:25px 0;letter-spacing:4px}
+    #personality{font-size:1.4rem;font-weight:600;color:#fff;background:rgba(255,255,255,0.15);padding:18px 24px;border-radius:16px;display:inline-block;margin:20px auto;max-width:90%;backdrop-filter:blur(8px);border:1px solid rgba(255,255,255,0.2)}
+    .dimensions{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin:35px 0}
+    .dim{background:rgba(255,255,255,0.95);color:#333;padding:20px;border-radius:16px;font-weight:600;box-shadow:0 6px 15px rgba(0,0,0,0.2);border:2px solid #FFD700;transition:.3s}
+    .dim:hover{transform:translateY(-5px)}
+    .dim strong{font-size:1.3rem;color:#8B0000}
+    .dim span{font-size:0.95rem;color:#555;display:block;margin-top:6px}
+    #suggestions{list-style:none;text-align:left;margin:35px 0;display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px}
+    #suggestions li{background:#FFF8E1;color:#8B0000;padding:14px 18px;border-radius:12px;border-left:5px solid #FFD700;font-weight:600;box-shadow:0 4px 10px rgba(0,0,0,0.1);transition:.2s}
+    #suggestions li:hover{transform:translateX(5px);background:#FFEB3B;color:#8B0000}
+    footer{text-align:center;padding:30px;font-size:0.9rem;opacity:0.8}
+    @media(max-width:600px){header h1{font-size:2.8rem}#mbtiType{font-size:4rem}.dimensions{grid-template-columns:1fr}#suggestions{grid-template-columns:1fr}}
+  </style>
+</head>
+<body>
+  <div id="snowflakes"></div>
+  <header>
+    <div class="container">
+      <h1>MBTI Giáng Sinh</h1>
+      <p>20 thanh trượt • 160+ ngành nghề mới nhất 2025</p>
+    </div>
+  </header>
+  <div class="container">
+    <section id="welcome" style="display:block">
+      <h2>Chào mừng bạn đến với bài trắc nghiệm MBTI chủ đề Giáng Sinh!</h2>
+      <p>Kéo thanh trượt theo mức độ đồng ý của bạn nhé!</p>
+      <button class="btn" onclick="startQuiz()">Bắt đầu ngay!</button>
+    </section>
+    <section id="main-content">
+      <div class="progress-bar"><div id="progress"></div></div>
+      <div id="questions"></div>
+      <button class="btn" onclick="submitQuiz()">Xem kết quả</button>
+    </section>
+    <section id="result">
+      <h2>Kết quả của bạn là:</h2>
+      <div id="mbtiType"></div>
+      <p id="personality"></p>
+      <div class="dimensions" id="dimensions"></div>
+      <h3 style="color:#FFD700;margin:25px 0 15px">10 ngành nghề cực kỳ phù hợp với bạn (2025):</h3>
+      <ul id="suggestions"></ul>
+      <button class="btn" onclick="location.reload()">Làm lại</button>
+    </section>
+  </div>
+  <footer>© 2025 MBTI Giáng Sinh - Made with Love</footer>
+
+  <script>
+    // Tuyết rơi
+    function createSnowflake(){
+      const s=document.createElement('div');s.classList.add('snowflake');
+      s.innerHTML=['Snowflake','Snowflake','*'][Math.floor(Math.random()*3)];
+      s.style.left=Math.random()*100+'vw';
+      s.style.fontSize=Math.random()*1.5+0.8+'em';
+      s.style.animationDuration=Math.random()*8+6+'s';
+      s.style.opacity=Math.random()*0.8+0.2;
+      document.getElementById('snowflakes').appendChild(s);
+      setTimeout(()=>s.remove(),15000);
+    }
+    setInterval(createSnowflake,250);
+
+    // 20 CÂU HỎI CHUẨN
+    const questions = [
+      {q:"Tôi thích tiệc tùng đông người vào đêm Giáng sinh",left:"Không thích",right:"Rất thích",type:"E"},
+      {q:"Tôi dễ bắt chuyện với người lạ ở chợ Giáng sinh",left:"Khó",right:"Rất dễ",type:"E"},
+      {q:"Tôi thích không khí náo nhiệt, đông đúc",left:"Không thích",right:"Rất thích",type:"E"},
+      {q:"Tôi thích hát Giáng sinh tập thể",left:"Không thích",right:"Rất thích",type:"E"},
+      {q:"Tôi hay mời bạn bè đến nhà chơi dịp lễ",left:"Hiếm khi",right:"Thường xuyên",type:"E"},
+      {q:"Tôi thích quà tặng thực tế, dùng được ngay",left:"Thích mơ mộng",right:"Rất quan trọng",type:"S"},
+      {q:"Tôi chú ý đến mùi hương bánh quy Giáng sinh",left:"Hiếm khi",right:"Luôn để ý",type:"S"},
+      {q:"Tôi thích trang trí theo kiểu truyền thống quen thuộc",left:"Thích mới lạ",right:"Thích truyền thống",type:"S"},
+      {q:"Tôi nhớ rõ món ăn Giáng sinh năm ngoái",left:"Không nhớ",right:"Nhớ rất rõ",type:"S"},
+      {q:"Tôi thích quà có bao bì đẹp mắt, cầm chắc tay",left:"Không quan tâm",right:"Rất thích",type:"S"},
+      {q:"Tôi chọn quà dựa trên tính thực dụng nhiều hơn cảm xúc",left:"Chủ yếu cảm xúc",right:"Chủ yếu thực dụng",type:"T"},
+      {q:"Tôi không dễ tha thứ nếu lý do không hợp lý",left:"Dễ tha thứ",right:"Khó tha thứ",type:"T"},
+      {q:"Tôi nói thẳng nếu quà không hợp",left:"Giữ hòa khí",right:"Nói thẳng",type:"T"},
+      {q:"Tôi ít xúc động khi nhận quà",left:"Rất dễ xúc động",right:"Hiếm khi xúc động",type:"T"},
+      {q:"Tôi viết thiệp ngắn gọn, đúng trọng tâm",left:"Viết dài cảm xúc",right:"Viết ngắn gọn",type:"T"},
+      {q:"Tôi thoải mái khi kế hoạch thay đổi phút chót",left:"Không thoải mái",right:"Hoàn toàn thoải mái",type:"P"},
+      {q:"Tôi hay mua quà vào phút cuối",left:"Hiếm khi",right:"Thường xuyên",type:"P"},
+      {q:"Tôi không cần kế hoạch chi tiết",left:"Rất cần",right:"Không cần",type:"P"},
+      {q:"Tôi trang trí nhà sát ngày Giáng sinh",left:"Hoàn thành sớm",right:"Làm sát ngày",type:"P"},
+      {q:"Tôi thích để mọi thứ tự do",left:"Không thích",right:"Rất thích",type:"P"}
+    ];
+
+    // MÔ TẢ 16 LOẠI
+    const personalityData = {
+      "ISTJ": {name:"Người trách nhiệm",desc:"Bạn lên kế hoạch Giáng sinh từ tháng 10, mọi thứ phải đúng giờ đúng gu."},
+      "ISFJ": {name:"Người bảo vệ",desc:"Bạn biến ngôi nhà thành tổ ấm ấm cúng nhất, nhớ từng sở thích của mọi người."},
+      "INFJ": {name:"Người lý tưởng",desc:"Bạn tìm ý nghĩa sâu sắc trong từng chiếc hộp quà, viết thiệp tay dài hàng trang."},
+      "INTJ": {name:"Nhà chiến lược",desc:"Bạn đã lập bảng Excel phân bổ ngân sách quà tặng, hiệu quả tối đa."},
+      "ISTP": {name:"Thợ thủ công",desc:"Bạn tự tay làm đồ trang trí, sửa đèn LED hỏng, thoải mái thay đổi kế hoạch."},
+      "ISFP": {name:"Nghệ sĩ",desc:"Cây thông nhà bạn là tác phẩm nghệ thuật sống động, mỗi quả châu đều được chọn theo cảm hứng."},
+      "INFP": {name:"Người mơ mộng",desc:"Bạn tưởng tượng mùa Giáng sinh hoàn hảo như phim, tin vào phép màu tình yêu."},
+      "INTP": {name:"Nhà tư duy",desc:"Bạn tò mò nguồn gốc ông già Noel, thích tranh luận ý nghĩa thực sự của lễ hội."},
+      "ESTP": {name:"Người hành động",desc:"Bạn là trung tâm bữa tiệc, khuấy động không khí bằng trò chơi và biểu diễn bất ngờ."},
+      "ESFP": {name:"Người biểu diễn",desc:"Bạn hát karaoke Noel suốt đêm, nhảy múa bên cây thông, biến mọi khoảnh khắc thành sân khấu."},
+      "ENFP": {name:"Người truyền cảm hứng",desc:"Bạn nghĩ ra 1001 ý tưởng mới: tiệc hóa trang, săn quà bí mật, video chúc mừng siêu sáng tạo."},
+      "ENTP": {name:"Người tranh luận",desc:"Bạn đề xuất ăn mừng kiểu Mexico, chơi White Elephant, luôn có ý tưởng phá cách."},
+      "ESTJ": {name:"Người quản lý",desc:"Bạn phân công nhiệm vụ rõ ràng: ai trang trí, ai nấu ăn, ai mua quà, đúng deadline."},
+      "ESFJ": {name:"Người chăm sóc",desc:"Bạn muốn cả thế giới được vui, chuẩn bị 50 phần quà nhỏ xinh và ôm hết mọi người."},
+      "ENFJ": {name:"Người dẫn dắt",desc:"Bạn tổ chức hoạt động tập thể, kết nối mọi người qua những câu chuyện ý nghĩa."},
+      "ENTJ": {name:"Nhà lãnh đạo",desc:"Bạn biến Giáng sinh thành sự kiện hoành tráng: thuê địa điểm, mời 200 khách, có pháo hoa lúc 0h."}
+    };
+
+    // 160+ NGÀNH NGHỀ ĐÚNG 2025 (10 ngành/loại)
+    const majorsData = {
+      "ISTJ": ["Kiểm toán viên","Quản lý kho bãi","Thư ký pháp lý","Giám sát sản xuất","Chuyên viên hải quan","Kỹ sư kiểm soát chất lượng","Quản lý hồ sơ","Giao dịch viên ngân hàng","Giáo viên THPT","Chuyên viên bảo hiểm"],
+      "ISFJ": ["Điều dưỡng viên","Giáo viên tiểu học","Chăm sóc khách hàng","Thủ thư","Chuyên gia dinh dưỡng","Nhân viên công tác xã hội","Trợ lý nha khoa","Quản lý văn phòng","Hướng dẫn viên bảo tàng","Nhân viên bảo vệ trẻ em"],
+      "INFJ": ["Nhà trị liệu tâm lý","Tác giả sách","Thiết kế trải nghiệm người dùng (UX)","Giám đốc sáng tạo phi lợi nhuận","Giảng viên đại học","Tư vấn hôn nhân gia đình","Biên tập viên sách","Nhà hoạt động nhân quyền","Đạo diễn phim tài liệu","Phóng viên điều tra"],
+      "INTJ": ["Kiến trúc sư hệ thống CNTT","Giám đốc tài chính (CFO)","Chuyên gia phân tích chiến lược","Kỹ sư phần mềm cao cấp","Luật sư sở hữu trí tuệ","Nhà nghiên cứu khoa học","Giám đốc công nghệ (CTO)","Chuyên gia an ninh mạng","Giáo sư đại học","Nhà đầu tư tài chính"],
+      "ISTP": ["Kỹ thuật viên hàng không","Lập trình viên nhúng","Thợ cơ khí chính xác","Lập trình viên game","Cứu hộ núi","Thợ điện công nghiệp","Kỹ sư robot","Phi công","Thợ độ xe đua","Kỹ thuật viên âm thanh sân khấu"],
+      "ISFP": ["Nhiếp ảnh gia","Thiết kế thời trang","Đầu bếp bánh ngọt","Nghệ nhân gốm sứ","Huấn luyện viên yoga","Thiết kế nội thất","Họa sĩ minh họa","Nhạc công tự do","Nghệ nhân thủ công mỹ nghệ","Thiết kế cảnh quan"],
+      "INFP": ["Biên kịch phim","Nhạc sĩ độc lập","Nhà thơ","Nhà hoạt động môi trường","Thiết kế đồ họa sáng tạo","Tác giả tiểu thuyết","Tác giả truyện tranh","Tư vấn tâm lý nghệ thuật","Biên tập thơ","Đạo diễn phim hoạt hình"],
+      "INTP": ["Nhà nghiên cứu AI","Giáo sư vật lý lý thuyết","Lập trình viên blockchain","Chuyên gia mật mã học","Triết gia công nghệ","Nhà thiên văn học","Kỹ sư dữ liệu lớn","Lập trình viên mã nguồn mở","Chuyên gia toán học","Nhà nghiên cứu não bộ"],
+      "ESTP": ["Doanh nhân khởi nghiệp","Nhà giao dịch chứng khoán","Huấn luyện viên thể thao","Quản lý sự kiện","Cảnh sát đặc nhiệm","Lính cứu hỏa","Đặc vụ","Phi công chiến đấu","Nhà sản xuất phim hành động","Vận động viên chuyên nghiệp"],
+      "ESFP": ["Diễn viên hài","MC truyền hình","Hướng dẫn viên du lịch mạo hiểm","Content Creator TikTok","Nhân viên bán hàng xuất sắc","Ca sĩ","Diễn viên nhạc kịch","DJ","MC gameshow","Chuyên viên quan hệ công chúng"],
+      "ENFP": ["Copywriter quảng cáo","Giám đốc sáng tạo nội dung","Phóng viên tự do","Coach phát triển bản thân","Quản lý cộng đồng","Giáo viên mỹ thuật","Event Planner sáng tạo","Biên tập viên tạp chí","Travel Blogger","Nhà sáng lập dự án xã hội"],
+      "ENTP": ["Luật sư tranh tụng","Nhà đầu tư mạo hiểm","Founder startup công nghệ","Diễn giả TEDx","Nhà phát minh","Chuyên gia marketing viral","Nhà sản xuất gameshow","Cố vấn chiến lược","YouTuber sáng tạo nội dung","Chuyên gia đàm phán"],
+      "ESTJ": ["Giám đốc điều hành (CEO)","Quản lý dự án xây dựng","Sĩ quan quân đội","Giám đốc ngân hàng","Hiệu trưởng","Thẩm phán","Giám đốc chuỗi siêu thị","Quản lý nhà máy","Chánh án","Giám đốc logistics"],
+      "ESFJ": ["Quản lý nhân sự (HR)","Wedding Planner","Giáo viên mầm non","Điều phối sự kiện","Nhân viên khách sạn 5 sao","Hướng dẫn viên du lịch nhóm","Quản lý nhà hàng","Nhân viên chăm sóc người cao tuổi","Quản lý tổ chức từ thiện","Hiệu phó"],
+      "ENFJ": ["Huấn luyện viên lãnh đạo","Giám đốc phát triển tổ chức","Nhà ngoại giao","Giảng viên kỹ năng mềm","Quản lý truyền thông","Tâm lý học trường học","Chính trị gia địa phương","Giám đốc quỹ từ thiện","Diễn giả truyền cảm hứng","Phóng viên truyền hình"],
+      "ENTJ": ["CEO tập đoàn","Quỹ đầu tư mạo hiểm","Chính trị gia cấp cao","Tổng giám đốc chuỗi bán lẻ","Chiến lược gia doanh nghiệp","Tư vấn quản trị cấp cao","Nhà sáng lập quỹ đầu tư","Thống đốc ngân hàng","Tướng lĩnh quân đội","Chủ tịch hội đồng quản trị"]
+    };
+
+    function startQuiz(){
+      document.getElementById("welcome").style.display="none";
+      document.getElementById("main-content").style.display="block";
+      document.getElementById("main-content").scrollIntoView({behavior:"smooth"});
+      const c=document.getElementById("questions");
+      if(c.children.length===0){
+        questions.forEach((q,i)=>{
+          const d=document.createElement("div");d.className="question";
+          d.innerHTML=`<p>${i+1}. ${q.q}</p>
+            <div class="slider-container">
+              <div class="slider-labels"><span class="left">${q.left}</span><span class="right">${q.right}</span></div>
+              <input type="range" min="0" max="100" value="50" class="slider" id="s${i}" oninput="updateValue(this,${i})">
+              <div class="value-display" id="v${i}">50%</div>
+            </div>`;
+          c.appendChild(d);
+        });
+      }
+    }
+
+    function updateValue(s,i){
+      const v=s.value;
+      document.getElementById(`v${i}`).textContent=v+"%";
+      document.getElementById(`v${i}`).style.left=`calc(${v}% - 30px)`;
+      updateProgress();
+    }
+
+    function updateProgress(){
+      const total=questions.length;
+      const answered=Array.from(document.querySelectorAll('input[type="range"]')).filter(s=>s.value!=50).length;
+      document.getElementById("progress").style.width=(answered/total*100)+"%";
+    }
+
+    function submitQuiz(){
+      const raw={E:0,I:0,S:0,N:0,T:0,F:0,J:0,P:0};
+      questions.forEach((q,i)=>{
+        const val=parseInt(document.getElementById(`s${i}`).value);
+        if(q.type==="E") raw.E+=val;
+        if(q.type==="S") raw.S+=val;
+        if(q.type==="T") raw.T+=val;
+        if(q.type==="P") raw.P+=val;
+        if(q.type==="E") raw.I+=100-val;
+        if(q.type==="S") raw.N+=100-val;
+        if(q.type==="T") raw.F+=100-val;
+        if(q.type==="P") raw.J+=100-val;
+      });
+
+      const safeDiv=(a,b)=>b===0?50:Math.round(a/b*100);
+      const pctE=safeDiv(raw.E,raw.E+raw.I); const pctI=100-pctE;
+      const pctS=safeDiv(raw.S,raw.S+raw.N); const pctN=100-pctS;
+      const pctT=safeDiv(raw.T,raw.T+raw.F); const pctF=100-pctT;
+      const pctJ=safeDiv(raw.J,raw.J+raw.P); const pctP=100-pctJ;
+
+      const final=(pctE>pctI?"E":"I")+(pctN>pctS?"N":"S")+(pctF>pctT?"F":"T")+(pctP>pctJ?"P":"J");
+
+      document.getElementById("mbtiType").innerText=final;
+      document.getElementById("personality").innerText=personalityData[final].name+" - "+personalityData[final].desc;
+      document.getElementById("dimensions").innerHTML=`
+        <div class="dim"><strong>I ${pctI}% ↔ E ${pctE}%</strong><span>Hướng nội - Hướng ngoại</span></div>
+        <div class="dim"><strong>S ${pctS}% ↔ N ${pctN}%</strong><span>Thực tế - Trực giác</span></div>
+        <div class="dim"><strong>T ${pctT}% ↔ F ${pctF}%</strong><span>Lý trí - Cảm xúc</span></div>
+        <div class="dim"><strong>J ${pctJ}% ↔ P ${pctP}%</strong><span>Nguyên tắc - Linh hoạt</span></div>
+      `;
+      const sug=majorsData[final];
+      document.getElementById("suggestions").innerHTML=sug.map(m=>`<li><strong>${m}</strong></li>`).join('');
+      document.getElementById("result").style.display="block";
+      document.getElementById("result").scrollIntoView({behavior:"smooth"});
+
+      // Lưu lịch sử
+      const h=JSON.parse(localStorage.getItem("mbti_history")|| "[]");
+      h.push({time:new Date().toLocaleString('vi-VN'),type:final});
+      if(h.length>10) h.shift();
+      localStorage.setItem("mbti_history",JSON.stringify(h));
+    }
+
+    setInterval(createSnowflake,250);
+  </script>
+</body>
+</html>
